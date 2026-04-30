@@ -3,16 +3,21 @@ package tests;
 import org.testng.annotations.Test;
 
 import base.BaseTest;
+import pages.HomePage;
+import pages.LoginPage;
 
 public class LoginTest extends BaseTest {
 
     @Test
-    public void test() {
+    public void loginSuccessTest() {
+        LoginPage loginpage = new LoginPage(page);
+        HomePage homepage = new HomePage(page);
+
         page.navigate("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-        page.getByPlaceholder("Username").click();
-        page.getByPlaceholder("Username").fill("Admin");
-        page.getByPlaceholder("Username").press("Tab");
-        page.getByPlaceholder("Password").fill("admin123");
-        page.getByPlaceholder("Password").press("Enter");
-  }
+
+        loginpage.addUsername("Admin");
+        loginpage.addPassword("admin123");
+        loginpage.clickLoginButton();
+        homepage.clickTimeLink();
+    }
 }
