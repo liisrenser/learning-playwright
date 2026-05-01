@@ -1,134 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-01T12:01:23 EEST" name="Surefire suite" finished-at="2026-05-01T12:02:09 EEST" duration-ms="46080">
+  <suite started-at="2026-05-01T12:44:12 EEST" name="Surefire suite" finished-at="2026-05-01T12:44:28 EEST" duration-ms="16287">
     <groups>
     </groups>
-    <test started-at="2026-05-01T12:01:23 EEST" name="Surefire test" finished-at="2026-05-01T12:02:09 EEST" duration-ms="46080">
-      <class name="tests.LoginTest">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.LoginTest@6193932a]" started-at="2026-05-01T12:01:23 EEST" name="setUp" finished-at="2026-05-01T12:01:30 EEST" duration-ms="6386" status="PASS">
+    <test started-at="2026-05-01T12:44:12 EEST" name="Surefire test" finished-at="2026-05-01T12:44:28 EEST" duration-ms="16287">
+      <class name="tests.LocatorDemo">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.LocatorDemo@5276e6b0]" started-at="2026-05-01T12:44:12 EEST" name="setUp" finished-at="2026-05-01T12:44:18 EEST" duration-ms="5764" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void tests.LoginTest.loginSuccessTest1()]]>
+                <![CDATA[public void tests.LocatorDemo.testAllLocators()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginSuccessTest1()[pri:0, instance:tests.LoginTest@6193932a]" started-at="2026-05-01T12:01:30 EEST" name="loginSuccessTest1" finished-at="2026-05-01T12:02:08 EEST" duration-ms="38768" status="FAIL">
-          <exception class="com.microsoft.playwright.TimeoutError">
-            <message>
-              <![CDATA[Error {
-  message='Timeout 30000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\liisr\AppData\Local\Temp\playwright-java-874999321681330615\package\lib\server\progress.js:78:26)
-    at Frame.click (C:\Users\liisr\AppData\Local\Temp\playwright-java-874999321681330615\package\lib\server\frames.js:1007:23)
-    at FrameDispatcher.click (C:\Users\liisr\AppData\Local\Temp\playwright-java-874999321681330615\package\lib\server\dispatchers\frameDispatcher.js:157:30)
-    at FrameDispatcher._handleCommand (C:\Users\liisr\AppData\Local\Temp\playwright-java-874999321681330615\package\lib\server\dispatchers\dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (C:\Users\liisr\AppData\Local\Temp\playwright-java-874999321681330615\package\lib\server\dispatchers\dispatcher.js:361:39)
-}
-Call log:
-- waiting for locator("a:has-text('Time')")
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 30000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\liisr\AppData\Local\Temp\playwright-java-874999321681330615\package\lib\server\progress.js:78:26)
-    at Frame.click (C:\Users\liisr\AppData\Local\Temp\playwright-java-874999321681330615\package\lib\server\frames.js:1007:23)
-    at FrameDispatcher.click (C:\Users\liisr\AppData\Local\Temp\playwright-java-874999321681330615\package\lib\server\dispatchers\frameDispatcher.js:157:30)
-    at FrameDispatcher._handleCommand (C:\Users\liisr\AppData\Local\Temp\playwright-java-874999321681330615\package\lib\server\dispatchers\dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (C:\Users\liisr\AppData\Local\Temp\playwright-java-874999321681330615\package\lib\server\dispatchers\dispatcher.js:361:39)
-}
-Call log:
-- waiting for locator("a:has-text('Time')")
-
-at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
-at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
-at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
-at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
-at com.microsoft.playwright.impl.PageImpl.lambda$click$18(PageImpl.java:682)
-at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
-at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
-at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
-at com.microsoft.playwright.impl.PageImpl.click(PageImpl.java:681)
-at com.microsoft.playwright.Page.click(Page.java:3902)
-at pages.HomePage.clickTimeLink(HomePage.java:16)
-at tests.LoginTest.loginSuccessTest1(LoginTest.java:27)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:744)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 30000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\liisr\AppData\Local\Temp\playwright-java-874999321681330615\package\lib\server\progress.js:78:26)
-    at Frame.click (C:\Users\liisr\AppData\Local\Temp\playwright-java-874999321681330615\package\lib\server\frames.js:1007:23)
-    at FrameDispatcher.click (C:\Users\liisr\AppData\Local\Temp\playwright-java-874999321681330615\package\lib\server\dispatchers\frameDispatcher.js:157:30)
-    at FrameDispatcher._handleCommand (C:\Users\liisr\AppData\Local\Temp\playwright-java-874999321681330615\package\lib\server\dispatchers\dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (C:\Users\liisr\AppData\Local\Temp\playwright-java-874999321681330615\package\lib\server\dispatchers\dispatcher.js:361:39)
-}
-Call log:
-- waiting for locator("a:has-text('Time')")
-
-at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
-at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
-at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
-... 43 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+        <test-method signature="testAllLocators()[pri:0, instance:tests.LocatorDemo@5276e6b0]" started-at="2026-05-01T12:44:18 EEST" name="testAllLocators" finished-at="2026-05-01T12:44:28 EEST" duration-ms="9676" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginSuccessTest1 -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@6193932a]" started-at="2026-05-01T12:02:08 EEST" name="tearDown" finished-at="2026-05-01T12:02:09 EEST" duration-ms="862" status="PASS">
+        </test-method> <!-- testAllLocators -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LocatorDemo@5276e6b0]" started-at="2026-05-01T12:44:28 EEST" name="tearDown" finished-at="2026-05-01T12:44:28 EEST" duration-ms="804" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginSuccessTest1 status=FAILURE method=LoginTest.loginSuccessTest1()[pri:0, instance:tests.LoginTest@6193932a] output={null}]]]>
+                <![CDATA[[TestResult name=testAllLocators status=SUCCESS method=LocatorDemo.testAllLocators()[pri:0, instance:tests.LocatorDemo@5276e6b0] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.LoginTest -->
+      </class> <!-- tests.LocatorDemo -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

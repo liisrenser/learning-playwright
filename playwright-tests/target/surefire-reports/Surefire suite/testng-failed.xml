@@ -3,13 +3,13 @@
 <suite name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="5" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="tests.LoginTest">
+      <class name="tests.LocatorDemo">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="loginSuccessTest1"/>
+          <include name="testAllLocators"/>
         </methods>
-      </class> <!-- tests.LoginTest -->
+      </class> <!-- tests.LocatorDemo -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

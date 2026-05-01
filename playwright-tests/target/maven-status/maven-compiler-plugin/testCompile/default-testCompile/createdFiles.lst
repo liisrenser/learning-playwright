@@ -5,3 +5,4 @@ utils\ScreenshotUtil.class
 tests\FirstTest.class
 tests\LoginTest.class
 utils\ExtentManager.class
+tests\LocatorDemo.class
