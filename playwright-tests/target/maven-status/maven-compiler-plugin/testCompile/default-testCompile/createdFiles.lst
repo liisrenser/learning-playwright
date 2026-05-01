@@ -1,2 +1,8 @@
+base\BaseTest.class
+pages\LoginPage.class
+pages\HomePage.class
+utils\ScreenshotUtil.class
 tests\FirstTest.class
-com\liis\qa\AppTest.class
+tests\LoginTest.class
+utils\ExtentManager.class
+tests\LocatorDemo.class

@@ -1,2 +1,8 @@
-C:\Users\liisr\OneDrive\Documents\GitHub\learning-playwright\playwright-tests\src\test\java\com\liis\qa\AppTest.java
+C:\Users\liisr\OneDrive\Documents\GitHub\learning-playwright\playwright-tests\src\test\java\base\BaseTest.java
+C:\Users\liisr\OneDrive\Documents\GitHub\learning-playwright\playwright-tests\src\test\java\pages\HomePage.java
+C:\Users\liisr\OneDrive\Documents\GitHub\learning-playwright\playwright-tests\src\test\java\pages\LoginPage.java
 C:\Users\liisr\OneDrive\Documents\GitHub\learning-playwright\playwright-tests\src\test\java\tests\FirstTest.java
+C:\Users\liisr\OneDrive\Documents\GitHub\learning-playwright\playwright-tests\src\test\java\tests\LocatorDemo.java
+C:\Users\liisr\OneDrive\Documents\GitHub\learning-playwright\playwright-tests\src\test\java\tests\LoginTest.java
+C:\Users\liisr\OneDrive\Documents\GitHub\learning-playwright\playwright-tests\src\test\java\utils\ExtentManager.java
+C:\Users\liisr\OneDrive\Documents\GitHub\learning-playwright\playwright-tests\src\test\java\utils\ScreenshotUtil.java
