@@ -1,5 +1,7 @@
 base\BaseTest.class
-tests\FirstTest.class
-tests\LoginTest.class
 pages\LoginPage.class
 pages\HomePage.class
+utils\ScreenshotUtil.class
+tests\FirstTest.class
+tests\LoginTest.class
+utils\ExtentManager.class
